@@ -7,7 +7,7 @@ const Question = ({id,title,info}) => {
   <header>
     <h4>{title}</h4>
     <button className='btn' onClick={() => setReadMore(!readMore)}>
-      {readMore ? <AiOutlinePlus /> : <AiOutlineMinus />}
+      {readMore ? <AiOutlineMinus /> : <AiOutlinePlus />}
     </button>
   </header>
   {readMore ? info : `...`}
